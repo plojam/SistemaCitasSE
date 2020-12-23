@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="CitasMedicas" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>ec.edu.ups.modelo.Persona</class>
+		<class>ec.edu.ups.modelo.Doctor</class>
+		<class>ec.edu.ups.modelo.Especialidad</class>
+		<class>ec.edu.ups.modelo.Colaborador</class>
+		<class>ec.edu.ups.modelo.TipoConlaborador</class>
+		<class>ec.edu.ups.modelo.Cliente</class>
+		<class>ec.edu.ups.modelo.Cita</class>
+		<class>ec.edu.ups.modelo.FacturaCabecera</class>
+		<class>ec.edu.ups.modelo.FacturaDetalle</class>
+		<class>ec.edu.ups.modelo.Horario</class>
+		<class>ec.edu.ups.modelo.HistoriaMedica</class>
+		<class>ec.edu.ups.modelo.RecetaMedica</class>
+		<class>ec.edu.ups.modelo.PrescripcionMedica</class>
+		<class>ec.edu.ups.modelo.Medicamento</class>
+		<class>ec.edu.ups.modelo.OrdenMedica</class>
+		<class>ec.edu.ups.modelo.TipoOrden</class>
+		<class>ec.edu.ups.modelo.Consulta</class>
+		<class>ec.edu.ups.modelo.CertificadoMedico</class>
+		<class>ec.edu.ups.modelo.PlanCuenta</class>
+		<class>ec.edu.ups.modelo.Cuenta</class>
+		<class>ec.edu.ups.modelo.Tipo</class>
+		<properties>
+			<property name="eclipselink.ddl-generation" value="create-tables"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/citasmedicas"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.password" value="Patito.123@456"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+		</properties>
+	</persistence-unit>
+</persistence>
